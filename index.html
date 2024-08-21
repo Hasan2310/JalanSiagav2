@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <title>JalanSiaga | Home</title>
+  </head>
+  <body>
+<!-- Navbar -->
+    <nav class="bg-[#1B1464] py-3">
+        <div class="container mx-auto flex justify-between items-center px-3 md:px-22">
+            <p class="text-3xl text-white font-extrabold">JalanSiaga</p>
+            
+            <!-- Menu untuk layar lg ke atas -->
+            <div class="hidden lg:flex text-white italic text-md">
+                <button class="px-3 py-2 nav-link">
+                    <a href="" class="mx-5">Panduan</a>
+                </button>
+                <button class="px-3 py-2 nav-link">
+                    <a href="" class="mx-5">Laporkan</a>
+                </button>
+                <button class="px-3 py-2 nav-link">
+                    <a href="" class="mx-5">Tentang</a>
+                </button>
+                <button class="px-3 py-2 nav-link">
+                    <a href="" class="mx-5">Masuk</a>
+                </button>
+            </div>
+            
+            <!-- Tombol hamburger untuk layar sm dan md -->
+            <div class="lg:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Menu mobile untuk layar sm dan md (hidden by default) -->
+        <div id="mobile-menu" class="hidden lg:hidden flex-col items-center px-28">
+            <button class="px-3 py-2">
+                <a href="" class="block text-white py-2 text-center">Panduan</a>
+            </button>
+            <button class="px-3 py-2">
+                <a href="" class="block text-white py-2 text-center">Laporkan</a>
+            </button>
+            <button class="px-3 py-2">
+                <a href="" class="block text-white py-2 text-center">Tentang</a>
+            </button>
+            <button class="px-3 py-2">
+                <a href="" class="block text-white py-2 text-center">Masuk</a>
+            </button>
+        </div>
+    </nav>
+<!-- End Navbar -->
+
+<!-- Pelaporan -->
+    <section class="bg-[#1B1464] flex flex-col items-center relative">
+      <img
+        src="assets/image/gambar.png"
+        class="min-w-full object-cover h-[80vh]"
+      />
+      <div class="container mx-auto">
+        <div class="swiper-container w-full relative -top-20 z-10">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide justify-center items-center">
+              <div
+                class="card text-center h-40 bg-gray-600 rounded-lg justify-center items-center shadow-2xl"
+              >
+                <img
+                  src="assets/image/PP.png"
+                  alt=""
+                  class="w-28 h-28 mb-5 py-3 mx-auto"
+                />
+                <p
+                  class="bg-white px-3 h-20 rounded-lg sm:text-sm md:text-md lg:text-2xl font-bold py-2"
+                >
+                  Proses <br />
+                  pengerjaan
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide justify-center items-center">
+              <div
+                class="card text-center h-40 bg-gray-600 rounded-lg justify-center items-center shadow-2xl"
+              >
+                <img
+                  src="assets/image/UP.png"
+                  alt=""
+                  class="w-28 h-28 mb-5 py-3 mx-auto"
+                />
+                <div class="content-card">
+                  <p
+                    class="bg-white px-3 h-20 rounded-lg sm:text-sm md:text-md lg:text-2xl font-bold py-2"
+                  >
+                    Unit <br />
+                    pelaksana
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide justify-center items-center">
+              <div
+                class="card text-center h-40 bg-gray-600 rounded-lg justify-center items-center shadow-2xl"
+              >
+                <img
+                  src="assets/image/SJ.png"
+                  alt=""
+                  class="w-28 h-28 mb-5 py-3 mx-auto"
+                />
+                <p
+                  class="bg-white px-3 h-20 rounded-lg sm:text-sm md:text-md lg:text-2xl font-bold py-2"
+                >
+                  Status jalan
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide justify-center items-center">
+              <div
+                class="card text-center h-40 bg-gray-600 rounded-lg justify-center items-center shadow-2xl"
+              >
+                <img
+                  src="assets/image/PP2.png"
+                  alt=""
+                  class="w-28 h-28 mb-5 py-3 mx-auto"
+                />
+                <p
+                  class="bg-white px-3 h-20 rounded-lg sm:text-sm md:text-md lg:text-2xl font-bold py-2"
+                >
+                  Projek <br />
+                  pembangunan
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide justify-center items-center">
+              <div
+                class="card text-center h-40 bg-gray-600 rounded-lg justify-center items-center shadow-2xl"
+              >
+                <img
+                  src="assets/image/P.png"
+                  alt=""
+                  class="w-24 h-28 mb-5 py-3 mx-auto"
+                />
+                <p
+                  class="bg-white px-3 h-20 rounded-lg sm:text-sm md:text-md lg:text-2xl font-bold py-2"
+                >
+                  Pengaduan
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide justify-center items-center">
+              <div
+                class="card text-center h-40 bg-gray-600 rounded-lg justify-center items-center shadow-2xl"
+              >
+                <img
+                  src="assets/image/SJ.png"
+                  alt=""
+                  class="w-28 h-28 mb-5 py-3 mx-auto"
+                />
+                <p
+                  class="bg-white px-3 h-20 rounded-lg sm:text-sm md:text-md lg:text-2xl font-bold py-2"
+                >
+                  Status jalan
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- End Pelaporan -->
+
+<!-- Panduan Laporan -->
+    <section class="bg-slate-200 pb-8">
+      <p
+        class="text-3xl font-semibold italic bg-[#1B1464] text-white py-5 text-center"
+      >
+        Panduan laporan
+      </p>
+      <div
+        class="container mx-auto grid lg:grid-cols-2 sm:grid-cols-1 sm:px-7 md:px-10"
+      >
+        <div class="content mt-3">
+          <p class="text-2xl italic">Syarat & Ketentuan Laporan</p>
+          <div class="columns-3 mt-3 relative cursor-pointer">
+            <div
+              class="card bg-[#F7931E] text-white hover:bg-white hover:text-black rounded-xl py-[127px] group shadow-lg"
+            >
+              <p
+                class="absolute text-lg group-hover:top-20 text-center top-28 font-bold lg:w-48 md:w-56 sm:w-[190px]"
+              >
+                Terdaftar
+              </p>
+              <p
+                class="opacity-0 group-hover:opacity-100 duration-300 absolute font-normal text-sm text-center group-hover:top-32 lg:w-48 md:w-[227px] sm:w-[185px]"
+              >
+                Masyarakat yang telah terdaftar bisa langsung mengajukan laporan
+              </p>
+            </div>
+            <div
+              class="card bg-[#F7931E] text-white hover:bg-white hover:text-black rounded-xl py-[127px] group shadow-lg"
+            >
+              <p
+                class="absolute text-lg group-hover:top-14 text-center top-24 font-bold lg:w-48 md:w-56 sm:w-[190px]"
+              >
+                Ajukan <br />pengaduan<br /><br />
+              </p>
+              <p
+                class="opacity-0 group-hover:opacity-100 duration-300 absolute font-normal text-sm text-center group-hover:top-32 lg:w-48 md:w-[227px] sm:w-[185px]"
+              >
+                Masyarakat terdaftar bisa mengajukan laporan mengenai kondisi
+                jalan yang memerlukan perhatian
+              </p>
+            </div>
+            <div
+              class="card bg-[#F7931E] text-white hover:bg-white hover:text-black rounded-xl py-[127px] group shadow-lg"
+            >
+              <p
+                class="absolute text-lg group-hover:top-14 text-center top-24 font-bold lg:w-48 md:w-56 sm:w-[190px]"
+              >
+                Lampiran <br />Bukti<br /><br />
+              </p>
+              <p
+                class="opacity-0 group-hover:opacity-100 duration-300 absolute font-normal text-sm text-center group-hover:top-32 lg:w-48 md:w-[227px] sm:w-[185px]"
+              >
+                Masyarkat bisa menyertakan foto, atau video sebagai bukti
+                pendukung laporan
+              </p>
+            </div>
+          </div>
+
+          <p class="text-2xl italic mt-5">Alur & Prosedur Laporan</p>
+          <div class="columns-3 mt-3 relative cursor-pointer">
+            <div
+              class="card bg-[#F7931E] text-white hover:bg-white hover:text-black rounded-xl py-[127px] group shadow-lg"
+            >
+              <p
+                class="absolute text-lg group-hover:top-14 text-center top-24 font-bold lg:w-48 md:w-56 sm:w-[190px]"
+              >
+                Pengaduan <br />Masyarakat<br /><br />
+              </p>
+              <p
+                class="opacity-0 group-hover:opacity-100 duration-300 absolute font-normal text-sm text-center group-hover:top-32 lg:w-48 md:w-[227px] sm:w-[185px]"
+              >
+                Pengaduan yang diajukan oleh masyarakat akan tercatat dalam
+                sistem untuk ditindaklanjuti
+              </p>
+            </div>
+            <div
+              class="card bg-[#F7931E] text-white hover:bg-white hover:text-black rounded-xl py-[127px] group shadow-lg"
+            >
+              <p
+                class="absolute text-lg group-hover:top-14 text-center top-24 font-bold lg:w-48 md:w-56 sm:w-[190px]"
+              >
+                Pegadun <br />Terkorfirmasi<br /><br />
+              </p>
+              <p
+                class="opacity-0 group-hover:opacity-100 duration-300 absolute font-normal text-sm text-center group-hover:top-32 lg:w-48 md:w-[227px] sm:w-[185px]"
+              >
+                Pengaduan yang sudah diverifikasi oleh pihak berwenang akan
+                mendapat status terkonfirmasi
+              </p>
+            </div>
+            <div
+              class="card bg-[#F7931E] text-white hover:bg-white hover:text-black rounded-xl py-[127px] group shadow-lg"
+            >
+              <p
+                class="absolute text-lg group-hover:top-14 text-center top-24 font-bold lg:w-48 md:w-56 sm:w-[190px]"
+              >
+                Tindak <br />Lanjut<br /><br />
+              </p>
+              <p
+                class="opacity-0 group-hover:opacity-100 duration-300 absolute font-normal text-sm text-center group-hover:top-32 lg:w-48 md:w-[227px] sm:w-[185px]"
+              >
+                Proses tindak lanjut terhadap pengaduan yang terkonfirmasi akan
+                dipantau dan diperbarui di sistem
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mx-5 mt-3">
+          <p class="text-2xl italic sm:mt-8">
+            Manfaat Layanan
+            <span class="font-bold text-gray-500">JalanSiaga</span>
+          </p>
+          <div class="ms-6">
+            <ul class="list-disc">
+              <li>
+                Dengan melaporkan kondisi jalan yang berbahaya seperti lubang
+                dapat membantu mencegah kecelakaan lalu lintas. Informasi yang
+                dilaporkan memungkinkan pihak berwenang untuk segera mengambil
+                tindakan perbaikan sehingga risiko kecelakaan dapat dikurangi
+                secara signifikan
+              </li>
+              <li>
+                memberikan data yang berharga bagi pihak berwenang untuk
+                memperbaiki dan meningkatkan kualitas layanan publik. Dengan
+                mengetahui masalah-masalah di lapangan secara real-time
+              </li>
+              <li>
+                Pihak berwenang dapat dengan mudah mengelola dan memprioritaskan
+                laporan kerusakan jalan
+              </li>
+            </ul>
+          </div>
+
+          <p class="text-2xl italic lg:mt-5 sm:mt-8">
+            Fitur situs <span class="font-bold text-gray-500">JalanSiaga</span>
+          </p>
+          <div class="ms-6">
+            <ul class="list-disc">
+              <li>
+                Pelaporan Lokasi: Pengguna dapat menandai lokasi spesifik di
+                peta tempat mereka menemukan masalah jalan
+              </li>
+              <li>
+                Unggahan Foto/Video: Pengguna dapat mengunggah foto atau video
+                dari masalah jalan untuk memberikan bukti visual dan membantu
+                pihak berwenang memahami tingkat kerusakanUnggahan Foto/Video:
+                Pengguna dapat mengunggah foto atau video dari masalah jalan
+                untuk memberikan bukti visual dan membantu pihak berwenang
+                memahami tingkat kerusakan
+              </li>
+              <li>
+                Pelacakan Laporan: Pengguna dapat melacak status laporan mereka,
+                apakah sudah diterima, sedang diproses, atau sudah diselesaikan
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- End Panduan Pelaporan -->
+
+    <section class="bg-[#1B1464] py-8">
+      <h1 class="text-white texx-2xl text-center text-3xl italic">
+        Laporan Kerusakan Jalan
+      </h1>
+      <div class="container mx-auto sm:w-[90%] mt-5">
+        <div
+          class="bg-white rounded-xl px-8 lg:py-8 sm:py-24 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2"
+        >
+          <div class="">
+            <p for="" class="text-md text-[#1B1464] font-bold">
+              Identitas pelapor
+            </p>
+            <br />
+            <input
+              type="text"
+              placeholder="Nama Lengkap Pelapor"
+              class="outline-none border-b-2 border-slate-900 w-full"
+            />
+            <br />
+            <br />
+            <label for="">+62</label>
+            <input
+              type="number"
+              class="outline-none border-b-2 lg:w-[503px] sm:w-[93%] border-slate-900"
+            />
+            <br />
+            <br />
+            <input
+              type="text"
+              class="outline-none border-b-2 w-full border-slate-900"
+              placeholder="Surel"
+            />
+            <br />
+            <!-- <div class="absolute inset-0 flex items-center justify-center">
+              <div class="h-full w-px bg-slate-900"></div>
+            </div> -->
+            <p class="text-md text-[#1B1464] font-bold mt-5">Tempat kejadian</p>
+            <p class="color-slate-200">Jenis kerusakan</p>
+            <textarea
+              name=""
+              id=""
+              cols="56"
+              rows="10"
+              class="border-2 border-slate-900 rounded-xl px-3 py-3"
+              placeholder="Catatan :"
+            ></textarea>
+            <div class="files mt-3 flex gap-3">
+              <button class="px-10 py-2 bg-[#1b1464] text-white rounded-lg">
+                Upload foto
+              </button>
+              <button class="px-10 py-2 bg-[#1b1464] text-white rounded-lg">
+                Upload video
+              </button>
+            </div>
+          </div>
+          <div class="px-5 lg:mt-0 sm:mt-5">
+            <div
+              class="px-5 py-5 h-[85%] lg:w-[105%] sm:w-[100%] bg-[#F7931E] rounded-xl flex justify-center items-center"
+            >
+              <h1 class="text-white font-bold">Pilih lokasi</h1>
+            </div>
+            <br />
+            <div class="flex">
+              <input
+                type="text"
+                class="outline-none border-b-2 lg:w-[60%] md:w-[73%] sm:w-[60%] border-slate-900"
+                placeholder="Surel"
+              />    
+              <button
+                class="lg:px-10 py-2 bg-[#1b1464] text-white rounded-lg lg:w-56 lg:-mr-8 md:px-5 sm:px-9"
+              >
+                Kirim Laporan
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
