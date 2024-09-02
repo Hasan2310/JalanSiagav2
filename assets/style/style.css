@@ -1,46 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-body {
-    font-family: "Montserrat", sans-serif;          
-    padding: 0;
-    margin: 0;
+/* Custom Animations */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+.fade-out .img {
+  animation: fadeOut 0.5s;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-link {
-    position: relative;
+  position: relative;
 }
 
 .nav-link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    left: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
 }
 
 @media (min-width: 768px) {
-    .nav-link:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
+  .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 2px solid white; /* Contoh highlight */
+}
+
+.nav-link.active:hover::after {
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  background-color: transparent;
 }
 
 .card {
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s ease;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s ease;
 }
 
 .card.highlight {
-    background: linear-gradient(145deg, #f59e0b, #fbbf24);
-    color: orange;
-    transform: scale(1.1);
-}    
+  background: linear-gradient(145deg, #f59e0b, #fbbf24);
+  color: orange;
+  transform: scale(1.1);
+  border-top: 90px;
+}
+
+.marquee {
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  animation: 30s linear infinite;
+}
